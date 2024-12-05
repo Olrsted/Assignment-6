@@ -28,7 +28,7 @@
   cursor: pointer;
 }
 
-.logo-image {
+.LogoI {
   height: 40px;
   width: auto;
   cursor: pointer;
@@ -70,7 +70,7 @@
   margin: 15px;
   align-items: center;
   justify-content: flex-end;
-  width: max-content;
+  width: 800px;
   height: 20px;
   padding: 6px;
   border-radius: 28px;

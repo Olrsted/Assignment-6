@@ -1,6 +1,6 @@
 .sign-up-page {
   min-height: 100vh;
-  background-image: url(/src/imgs/background.jpg);
+  background-image: url(/src/imgs/HeroBG.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,10 +107,6 @@ form .remember {
 form .remember input {
   margin-right: 5px;
   accent-color: #b3b3b3;
-}
-
-form .help :where(label, a) {
-  font-size: 0.9rem;
 }
 
 .sign-up :where(label, p, a) {

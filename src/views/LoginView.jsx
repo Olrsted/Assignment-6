@@ -5,7 +5,7 @@ import './LoginView.css';
 function LoginView() {
   const navigate = useNavigate();
   const [pass, setPass] = useState('');
-  const password = "iloveyou";
+  const password = "bruh";
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -32,15 +32,7 @@ function LoginView() {
             <label>Password</label>
           </div>
           <button className="sign-in-btn" type="submit">Sign In</button>
-          <div className="help">
-            <div className="remember">
-              <input type="checkbox" id="remember" />
-              <label htmlFor="remember">Remember me</label>
-            </div>
-            <Link to="#">Need help?</Link>
-          </div>
         </form>
-        <p>New to NETDIX? <Link to="/signup">Sign Up</Link></p>
       </div>
     </div>
   );
