@@ -11,7 +11,7 @@ function LoginView() {
     event.preventDefault();
 
     if (pass === password) {
-      navigate('/');
+      navigate('/movies');
     } else {
       alert('Wrong Password');
       console.log(pass);

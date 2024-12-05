@@ -10,7 +10,6 @@ function MoviesView() {
     { genre: "Action", id: 28 },
     { genre: "Adventure", id: 12 },
     { genre: "Comedy", id: 35 },
-    { genre: "TV", id: 10770 },
     { genre: "Horror", id: 27 },
     { genre: "War", id: 10752 },
     { genre: "Science Fiction", id: 878 },
