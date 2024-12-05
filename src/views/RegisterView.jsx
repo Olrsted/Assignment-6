@@ -44,11 +44,7 @@ function RegisterView() {
             <label>Confirm Password</label>
           </div>
           <button className="sign-up-btn" type="submit">Sign Up</button>
-          <div className="help">
-            <Link to="#">Need help?</Link>
-          </div>
         </form>
-        <p>Already have an account? <Link to="/signin">Sign In</Link></p>
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ function Feature() {
 
         const shuffledMovies = moviesData
           .sort(() => 0.5 - Math.random())
-          .slice(0, 4);
+          .slice(0, 12);
 
         setNowPlayingMovies(shuffledMovies);
       } catch (error) {

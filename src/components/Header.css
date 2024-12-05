@@ -133,9 +133,9 @@
   margin: 5px;
   font-size: 14px;
   font-weight: bold;
-  background-color: #1aff66; /* Orange background for the button */
+  background-color: #1aff66; 
   color: white;
-  border: 2px solid #1aff66; /* Orange border */
+  border: 2px solid #1aff66; 
   border-radius: 10px;
   cursor: pointer;
   text-decoration: none;

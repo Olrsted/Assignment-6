@@ -1,43 +1,65 @@
 .footer {
-  background-color: #111;
-  padding: 100px;
+  background-color: #d32f2f; /* Red background */
+  padding: 60px 20px; /* Adjust padding for vertical space */
+  width: 100%; /* Ensure footer takes full width */
+  box-sizing: border-box; /* Prevent overflow */
 }
 
 .footerContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center the entire footer content */
+  align-items: center;
+  width: 100%;
+  max-width: 450px; /* Further reduce the max-width */
+  margin: 0 auto; /* Center the footer */
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px; /* Provide space between elements */
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center; /* Center the social icons */
+  align-items: center;
+  gap: 20px; /* Space between icons */
 }
 
 .socialIcons a {
-  margin: 0 20px;
-  font-size: 20px;
-  color: white;
+  font-size: 30px; /* Larger icons */
+  color: black; /* Set icon color to black */
   transition: color 0.3s;
 }
 
 .socialIcons a:hover {
-  color: #ffa31a;
+  color: #d32f2f; /* Red color on hover */
 }
 
 .footerNav ul {
   display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Center the navigation links */
+  gap: 15px; /* Space between menu items */
 }
 
 .footerNav ul li {
-  margin: 0 15px;
+  margin: 0; /* Remove extra margin */
 }
 
 .footerNav ul li a {
-  color: white;
+  color: black; /* Set link color to black */
   text-decoration: none;
+  font-size: 1.2rem; /* Larger text for visibility */
+  transition: color 0.3s;
 }
 
 .footerNav ul li a:hover {
-  color: #ffa31a;
+  color: #d32f2f; /* Red on hover */
 }
 
 .footerBottom {
   text-align: center;
-  color: white;
+  color: black; /* Set bottom text color to black */
+  margin-top: 40px; /* Add space between footer content and bottom text */
+  font-size: 1rem; /* Proper size for bottom text */
 }
