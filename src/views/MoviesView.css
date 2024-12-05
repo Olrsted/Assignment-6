@@ -1,20 +1,26 @@
+/* Import the pixel font (Press Start 2P) from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 html,
 body {
   height: 100%;
   margin: 0;
+  font-family: 'Press Start 2P', cursive; /* Apply pixel font */
 }
 
 .movies-view-container {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background: #151515;
+  background: #003366; /* Dark blue background */
 }
 
 .sidebar {
   flex: 1;
   padding: 10px;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #b3c7e6; /* Light blue border */
+  background: #1a2d4d; /* Darker blue sidebar */
+  color: #ffffff; /* White text */
 }
 
 .main-content {
@@ -22,6 +28,8 @@ body {
   flex: 1;
   padding: 10px;
   overflow-y: auto;
+  background: #e6f0ff; /* Light blue background */
+  color: #003366; /* Dark blue text */
 }
 
 .genre-view {
@@ -29,18 +37,69 @@ body {
   flex: 1;
   flex-direction: column;
   margin-right: 10px;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #b3c7e6; /* Light blue border */
+  background: #e6f0ff; /* Light blue background */
 }
 
 .detail-view {
   flex: 3;
   padding-left: 10px;
+  background: #f0f8ff; /* Very light blue background */
 }
 
 footer {
-  background-color: #222;
-  color: #fff;
+  background-color: #003366; /* Dark blue background */
+  color: #fff; /* White text */
   text-align: center;
   padding: 10px;
   width: 100%;
+  font-family: 'Press Start 2P', cursive; /* Apply pixel font */
+}
+
+/* Links in the sidebar or content */
+a {
+  color: #fff; /* White links */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #ffa31a; /* Orange color on hover */
+}
+
+/* Specific styling for buttons */
+button {
+  background-color: #003366; /* Dark blue button background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive; /* Apply pixel font */
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #005bb5; /* Hover to a lighter blue */
+  transform: scale(1.05);
+}
+
+/* Ensure mobile responsiveness */
+@media (max-width: 740px) {
+  .sidebar {
+    padding: 8px;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .genre-view {
+    margin-right: 0;
+  }
+
+  .detail-view {
+    padding-left: 0;
+  }
 }

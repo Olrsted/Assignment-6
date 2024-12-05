@@ -1,3 +1,6 @@
+/* Import the pixel font (Press Start 2P) from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .navbar {
   position: fixed;
   top: 0;
@@ -13,7 +16,7 @@
   padding: 0 50px;
   height: 100%;
   color: white;
-  font-family: 'sen', sans-serif;
+  font-family: 'Press Start 2P', cursive; /* Apply pixel font */
 }
 
 .logo-container {
@@ -22,9 +25,8 @@
 }
 
 .logo {
-  font-family: 'sen', sans-serif;
   font-size: 30px;
-  color: ffa31a;
+  color: red; 
   cursor: pointer;
 }
 
@@ -56,7 +58,7 @@
 
 .menu-list-item:hover {
   font-weight: bold;
-  color: #ffa31a;
+  color: red;
   text-decoration: underline;
 }
 
@@ -65,13 +67,13 @@
   text-decoration: none;
 }
 
+/* Search Bar */
 .search-bar {
   display: flex;
-  margin: 15px;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start; /* Align search text to the left */
   width: 800px;
-  height: 20px;
+  height: 40px; /* Increased height for better alignment */
   padding: 6px;
   border-radius: 28px;
   background: #c8c7c7;
@@ -86,22 +88,26 @@
   background: #f6f6f6;
 }
 
+/* Search Input */
 .search-input {
   font-size: 14px;
-  font-family: 'sen', sans-serif;
+  font-family: 'Press Start 2P', cursive;
   color: #333333;
   margin-right: 6px;
   outline: none;
   border: none;
   background: transparent;
   flex: 1;
+  text-align: left; 
 }
 
+/* Search Input Placeholder and Icon */
 .search-input::placeholder,
 .search-icon {
   color: rgba(0, 0, 0, .5);
 }
 
+/* Search Icon - Align to the right */
 .search-icon {
   font-size: 18px;
   color: rgba(0, 0, 0, .5);
@@ -109,6 +115,7 @@
   border: none;
   outline: none;
   background: none;
+  margin-left: 400px; /* Aligns the icon to the far right of the search bar */
 }
 
 .search-bar button {
@@ -119,15 +126,16 @@
   cursor: pointer;
 }
 
+/* Sign-in Button */
 .signin-btn {
   display: flex;
   padding: 5px 15px;
   margin: 5px;
   font-size: 14px;
   font-weight: bold;
-  background-color: ffa31a;
+  background-color: #1aff66; /* Orange background for the button */
   color: white;
-  border: 2px solid ffa31a;
+  border: 2px solid #1aff66; /* Orange border */
   border-radius: 10px;
   cursor: pointer;
   text-decoration: none;
@@ -135,10 +143,11 @@
 }
 
 .signin-btn:hover {
-  background-color: #ffa31a;
-  border-color: #ffa31a;
+  background-color: #1aff66;
+  border-color: #1aff66;
 }
 
+/* Responsive styles for smaller screens */
 @media only screen and (max-width: 940px) {
   .menu-container {
     display: none;

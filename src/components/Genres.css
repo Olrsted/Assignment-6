@@ -1,16 +1,19 @@
+/* General styles */
 .genres-container {
   padding-top: 40px;
   height: 100vh;
   width: 200px;
   margin: 20px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Press Start 2P', cursive; /* Pixel-like font */
   text-align: center;
+  background-color: black; /* Black background */
+  color: white; /* White text */
 }
 
 .genres-container h3 {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #ffffff;
+  color: white; /* White text */
   margin-bottom: 15px;
 }
 
@@ -22,10 +25,10 @@
 
 .genre-button {
   background-color: transparent;
-  border: 2px solid #ffa31a; 
+  border: 2px solid white; /* White border for contrast */
   padding: 10px 20px;
   border-radius: 5px;
-  color: white;
+  color: white; /* White text */
   font-size: 0.9rem;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
@@ -35,22 +38,25 @@
 }
 
 .genre-button:hover {
-  background-color: #ffa31a;
+  background-color: white; /* White background on hover */
+  color: black; /* Black text on hover */
   transform: scale(1.05);
 }
 
 .genre-button.active-genre {
-  background-color: #ffa31a;
-  border-color: #ffa31a;
+  background-color: white; /* White background for active button */
+  color: black; /* Black text for active button */
+  border-color: white; /* White border for active button */
   transform: scale(1.05);
 }
 
 .genre-link {
   text-decoration: none;
-  color: white;
+  color: white; /* White text for links */
   display: block;
 }
 
+/* Media Queries for responsiveness */
 @media (max-width: 768px) {
   .genres-container {
     width: 100%;
