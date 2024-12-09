@@ -161,3 +161,55 @@ form .help :where(label, a) {
     margin-bottom: 20px;
   }
 }
+
+/* Genre selection styles */
+.genre-selection {
+  margin-top: 20px;
+}
+
+.genre-selection h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.genre-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.genre-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.genre-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.genre-checkbox label {
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #003366; /* Dark blue button background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background: #005bb5; /* Lighter blue on hover */
+}
+

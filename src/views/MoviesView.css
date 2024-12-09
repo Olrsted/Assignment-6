@@ -41,6 +41,42 @@ body {
   background: #e6f0ff; /* Light blue background */
 }
 
+/* Genre selection styles */
+.genre-view h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.genre-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.genre-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.genre-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.genre-checkbox label {
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.genre-checkbox label:hover {
+  color: #0073e6;
+}
+
 .detail-view {
   flex: 3;
   padding-left: 10px;
@@ -103,3 +139,5 @@ button:hover {
     padding-left: 0;
   }
 }
+
+
