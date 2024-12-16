@@ -15,6 +15,13 @@ body {
   background: #003366; /* Dark blue background */
 }
 
+.middle {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  background: #e6f0ff; /* Light blue background */
+}
+
 .sidebar {
   flex: 1;
   padding: 10px;
@@ -25,11 +32,11 @@ body {
 
 .main-content {
   display: flex;
-  flex: 1;
+  flex: 3;
   padding: 10px;
-  overflow-y: auto;
-  background: #e6f0ff; /* Light blue background */
+  background: #f0f8ff; /* Very light blue background */
   color: #003366; /* Dark blue text */
+  overflow-y: auto;
 }
 
 .genre-view {
@@ -41,7 +48,6 @@ body {
   background: #e6f0ff; /* Light blue background */
 }
 
-/* Genre selection styles */
 .genre-view h3 {
   font-size: 1.5rem;
   font-weight: bold;
@@ -139,5 +145,4 @@ button:hover {
     padding-left: 0;
   }
 }
-
 
