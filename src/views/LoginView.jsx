@@ -1,40 +1,44 @@
-import { useNavigate, Link } from 'react-router-dom';
+import "./LoginView.css";
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
+import { useNavigate } from "react-router";
 import { useState } from 'react';
-import './LoginView.css';
+import { useStoreContext } from "../context";
+
 
 function LoginView() {
+  let [user, setUser] = useState("");
+  let [pass, setPass] = useState("");
+  const { email, password, setLoggedIn } = useStoreContext();
   const navigate = useNavigate();
-  const [pass, setPass] = useState('');
-  const password = "bruh";
 
-  const handleSubmit = (event) => {
+  function login(event) {
     event.preventDefault();
-
-    if (pass === password) {
-      navigate('/movies');
-    } else {
-      alert('Wrong Password');
-      console.log(pass);
+    if (user == "") {
+      return alert("Please enter an email");
     }
-  };
+    if (user != email || pass != password) {
+      return alert("Incorrect login credentials, please try again");
+    }
+    setLoggedIn(true);
+    return navigate("/movies");
+  }
 
   return (
-    <div className="sign-in-page">
-      <div className="sign-in">
+    <div>
+      <Header />
+      <form id="contents" onSubmit={(event) => { login(event) }}>
         <h2>SIGN IN</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="info">
-            <input type="email" name="email" required />
-            <label>Email</label>
-          </div>
-          <div className="info">
-            <input type="password" name="password" onChange={(event) => { setPass(event.target.value) }} required />
-            <label>Password</label>
-          </div>
-          <button className="sign-in-btn" type="submit">Sign In</button>
-        </form>
-      </div>
+        <br></br>
+        <label>Email:</label>
+        <input type="email" value={user} onChange={(event) => setUser(event.target.value.trim())}></input>
+        <label>Password:</label>
+        <input type="password" value={pass} onChange={(event => setPass(event.target.value))}></input>
+        <button id="enter" style={{ cursor: 'pointer' }}>Login</button>
+      </form>
+      <Footer />
     </div>
+
   );
 }
 

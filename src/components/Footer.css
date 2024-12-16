@@ -1,8 +1,22 @@
+/* Ensure the entire body uses the full height of the viewport */
+body, html {
+  height: 100%;
+  margin: 0; /* Remove default margin */
+}
+
+.main-content {
+  min-height: 100%; /* Ensure content area takes at least the full height */
+  display: flex;
+  flex-direction: column;
+}
+
 .footer {
   background-color: #d32f2f; /* Red background */
   padding: 60px 20px; /* Adjust padding for vertical space */
   width: 100%; /* Ensure footer takes full width */
   box-sizing: border-box; /* Prevent overflow */
+  position: relative; /* Ensures footer is placed below content */
+  bottom: 0; /* Position it at the bottom of the page */
 }
 
 .footerContainer {
@@ -62,4 +76,11 @@
   color: black; /* Set bottom text color to black */
   margin-top: 40px; /* Add space between footer content and bottom text */
   font-size: 1rem; /* Proper size for bottom text */
+}
+
+/* Ensure the footer stays at the bottom */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }

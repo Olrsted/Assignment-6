@@ -55,8 +55,29 @@ function Header() {
             </a>
           </div>
         </div>
+
+        {loggedIn ? (
+          <div>
+            <button onClick={() => navigate("/cart")}>Cart</button>
+            <button onClick={() => navigate("/settings")}>Settings</button>
+            <button onClick={() => logout()}>Logout</button>
+          </div>
+        ) : (
+          <div>
+            <button onClick={() => navigate("/login")}>Login</button>
+            <button onClick={() => navigate("/register")}>Signup</button>
+          </div>
+        )}
+
+      </div >
+      {loggedIn ? (
+        <h1>Welcome to WStream4U, {firstName}!</h1>
+      ) : (
+        <></>
+      )}
       </div>
-    </div>
+
+    
   );
 }
 

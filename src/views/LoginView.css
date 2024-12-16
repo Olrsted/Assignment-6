@@ -1,148 +1,110 @@
 /* Import the pixel font (Press Start 2P) from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-.sign-in-page {
-  height: 100vh;
-  background-image: url(/src/imgs/HeroBG.png); /* Ensure background image path is correct */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Press Start 2P', cursive; /* Apply pixel font */
+/* Overall body styling */
+body {
+    background-color: #141414; /* Dark background */
+    color: white; /* White text color */
+    font-family: 'Press Start 2P', cursive; /* Pixelated font */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('/src/imgs/HeroBG.png'); /* Ensure background image path is correct */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.sign-in {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 90%;
-  max-width: 430px;
-  padding: 60px;
-  border-radius: 10px;
-  background: rgba(0, 51, 102, 0.85); /* Dark blue background with transparency */
-  transform: translate(-50%, -50%);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+/* Contents container with background image */
+#contents {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    margin-top: 250px;
+    margin-bottom: 490px;
 }
 
-.sign-in h2 {
-  color: #fff; /* White text */
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: center;
+/* Styling for the heading */
+#contents h2 {
+    color: rgb(194, 39, 39); /* Red title text */
+    text-align: center;
+    font-family: 'Press Start 2P', sans-serif;
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold;
 }
 
-.sign-in form {
-  margin: 25px 0 40px;
+/* Label styling */
+#contents label {
+    font-size: 1px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 8px;
+    text-align: left;
 }
 
-form .info {
-  position: relative;
-  height: 50px;
-  margin-bottom: 25px;
-}
-
-.info input {
-  width: 390px;
-  height: 100%;
-  background: #1a2d4d; /* Dark blue background for input fields */
-  border: none;
-  border-radius: 4px;
-  color: #fff; /* White text in inputs */
-  font-size: 1rem;
-  padding: 0px 20px;
-  transition: all 0.2s ease;
-}
-
-.info input:is(:focus, :valid) {
-  padding: 16px 20px 0;
-  background: #003366; /* Lighter blue when focused */
-}
-
-.info label {
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  color: #8c8c8c; /* Light gray color for label */
-  pointer-events: none;
-  transform: translateY(-50%);
-  font-size: 1rem;
-  transition: transform 0.2s ease, font-size 0.2s ease;
-}
-
-.info input:is(:focus, :valid)~label {
-  transform: translateY(-130%);
-  font-size: 0.75rem;
-}
-
-form .sign-in-btn {
-  width: 100%;
-  padding: 16px 0;
-  font-size: 1rem;
-  border: none;
-  color: #003366; /* Dark blue text */
-  font-weight: 500;
-  border-radius: 4px;
-  margin: 20px 0 10px;
-  cursor: pointer;
-  background: #e6f0ff; /* Light blue background for button */
-  transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-form .sign-in-btn:hover {
-  background: #003366; /* Dark blue on hover */
-  color: #fff; /* White text on hover */
-  transform: scale(1.05);
-}
-
-form .help {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-form .remember {
-  display: flex;
-  align-items: center;
-}
-
-form .remember input {
-  margin-right: 5px;
-  accent-color: #b3b3b3;
-}
-
-form .help :where(label, a) {
-  font-size: 0.9rem;
-}
-
-.sign-in :where(label, p, a) {
-  color: #b3b3b3; /* Light gray for label, p, and a */
-}
-
-.sign-in p a {
-  color: #fff; /* White links */
-  text-decoration: none;
-  transition: text-decoration 0.2s ease;
-}
-
-.sign-in p a:hover {
-  text-decoration: underline;
-  color: #ffa31a; /* Orange hover color for links */
-}
-
-@media (max-width: 740px) {
-  nav,
-  .sign-in {
-    padding: 20px;
-  }
-
-  .sign-in {
-    top: 45%;
+/* Input styling */
+#contents input {
     width: 100%;
-  }
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
 
-  .sign-in form {
-    margin: 25px 0 40px;
-  }
+#contents input:focus {
+    outline: none;
+    border-color: rgb(194, 39, 39); /* Red border on focus */
+    background-color: #003366; /* Lighter blue on focus */
+}
+
+/* Login button styling */
+#enter {
+    width: 100%;
+    padding: 15px;
+    background-color: #e50914;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#enter:hover {
+    background-color: #f40612; /* Darker red on hover */
+}
+
+/* Media Queries for mobile responsiveness */
+@media (max-width: 740px) {
+    #contents {
+        padding: 20px;
+        width: 100%;
+        top: 45%;
+    }
+
+    #contents h2 {
+        font-size: 1.5rem;
+    }
+
+    #contents input, #enter {
+        font-size: 14px;
+    }
 }

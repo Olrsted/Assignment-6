@@ -131,6 +131,7 @@
   padding: 5px 15px;
   margin: 5px;
   font-size: 14px;
+  font-family: 'Press Start 2P', cursive;
   font-weight: bold;
   background-color: #1aff66; 
   color: white;
@@ -141,6 +142,29 @@
   transition: background-color 0.3s, border-color 0.3s;
 }
 
+h1 {
+  color: blue;
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 20px;
+
+}
+
+button {
+  border: none;
+  background-color: black;
+  color: blue;
+  font-size: 20px;
+  width: 100px;
+  height: 100%;
+  cursor: pointer;
+  transition-duration: 0.5s;
+
+}
+
+button:hover {
+  color: white;
+}
 .signin-btn:hover {
   background-color: #1aff66;
   border-color: #1aff66;

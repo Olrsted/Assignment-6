@@ -1,92 +1,116 @@
-/* Import the pixel font (Press Start 2P) from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-.detail-view-container {
-  padding: 60px;
-  font-family: 'Press Start 2P', cursive; /* Apply pixel font */
-  background-color: #151515;
-  color: #fff; /* White text for contrast */
-  max-width: 1200px;
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.buy-button {
+  height: 50px;
+  margin-bottom: 10px;
 }
 
-.detail-view-container h1 {
+h4 {
+  width: 700px;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #fffefe;
-  margin-bottom: 20px;
-  text-align: center;
+  margin-bottom: 10px;
   text-transform: uppercase;
+  color: #fff;
 }
 
-.detail-view-poster {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* Movie Details Section */
+#detail {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #b3b3b3;
 }
 
-.detail-info {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 10px;
-  color: #fff; /* White text for contrast */
+#poster {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 
-.detail-info span {
+/* Release Date */
+#detail:nth-of-type(1) {
   font-weight: bold;
-  color: #003366; /* Dark blue for span */
+  font-family: 'Press Start 2P', sans-serif;
+  color: #fff;
 }
 
-.trailer-section {
+/* Runtime */
+#detail:nth-of-type(2) {
+  color: #e50914;
+}
+
+/* Language */
+#detail:nth-of-type(3) {
+  color: #b3b3b3;
+}
+
+/* Production Companies */
+#detail:nth-of-type(4) {
+  font-style: italic;
+  color: #999;
+}
+
+/* Description */
+#detail:nth-of-type(5) {
+  font-size: 1.1rem;
+  color: #fff;
+  width: 900px;
+}
+
+/* Trailers Section */
+.trailers-section {
   margin-top: 40px;
-  text-align: center;
-  color: #003366; /* Dark blue text for the trailer section */
 }
 
-.trailer-text {
-  margin-bottom: 5px;
+.trailers-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #fff;
 }
 
-.trailer-section iframe {
-  width: 100%;
-  max-width: 800px;
-  height: 450px;
+/* Trailers Grid Layout */
+.trailers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Individual Trailer Tile */
+.trailer-tile {
+  position: relative;
+  background-color: #333;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
-.add-to-cart-button {
-  background-color: transparent;
-  border: 2px solid #003366; /* Dark blue border for button */
-  margin-bottom: 10px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: #003366; /* Dark blue text for button */
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
+.trailer-tile:hover {
+  transform: scale(1.05);
 }
 
-.add-to-cart-button:hover {
-  background-color: #003366; /* Dark blue background on hover */
-  color: white; /* White text when hovered */
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-  text-align: center;
+/* Trailer Thumbnail Image */
+.trailer-thumbnail {
   width: 100%;
-  box-sizing: border-box;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Trailer Name Overlay */
+.trailer-tile h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
 }
