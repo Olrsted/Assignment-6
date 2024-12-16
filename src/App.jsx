@@ -16,8 +16,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomeView />} />
-          <Route path="/signup" element={<RegisterView />} />
-          <Route path="/signin" element={<LoginView />} />
+          <Route path="/register" element={<RegisterView />} />
+          <Route path="/login" element={<LoginView />} />
           <Route path="/movies" element={<MoviesView />}>
             <Route path="genre/:id" element={<GenreView />} />
             <Route path="details/:id" element={<DetailView />} />

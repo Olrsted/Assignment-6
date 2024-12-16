@@ -1,11 +1,13 @@
 import "./Header.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { useStoreContext } from "../context";
 
 function Header() {
   const navigate = useNavigate();
   const location = useLocation();
   const isActive = (path) => location.pathname === path;
+  const { loggedIn, setLoggedIn, firstName, defaultGenre } = useStoreContext();
 
   return (
     <div className="navbar">
@@ -33,29 +35,6 @@ function Header() {
           </form>
         </div>
 
-        <div className="sign-in-container">
-          <div className="sign-in-button-container">
-            <a
-              href="/signIn"
-              className="signin-btn"
-              onClick={() => navigate("/signin")}
-            >
-              Sign In
-            </a>
-          </div>
-        </div>
-        <div className="sign-in-container">
-          <div className="sign-in-button-container">
-            <a
-              href="/signup"
-              className="signin-btn"
-              onClick={() => navigate("/signup")}
-            >
-              Sign Up
-            </a>
-          </div>
-        </div>
-
         {loggedIn ? (
           <div>
             <button onClick={() => navigate("/cart")}>Cart</button>
@@ -64,8 +43,8 @@ function Header() {
           </div>
         ) : (
           <div>
-            <button onClick={() => navigate("/login")}>Login</button>
-            <button onClick={() => navigate("/register")}>Signup</button>
+            <button onClick={() => navigate("/login")}>Sign In</button>
+            <button onClick={() => navigate("/register")}>Sign Up</button>
           </div>
         )}
 

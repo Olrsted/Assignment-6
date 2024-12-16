@@ -23,8 +23,6 @@ body {
     align-items: center;
     background-color: black;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 30px;
     border-radius: 10px;
     width: 300px;
@@ -45,7 +43,7 @@ body {
 
 /* Label styling */
 #contents label {
-    font-size: 1px;
+    font-size: 15px;
     font-weight: bold;
     color: white;
     display: block;

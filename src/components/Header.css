@@ -8,6 +8,7 @@
   height: 50px;
   background-color: black;
   z-index: 1000;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .navbar-container {
@@ -22,22 +23,26 @@
 .logo-container {
   flex: 1;
   cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .logo {
   font-size: 30px;
   color: red; 
   cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .LogoI {
   height: 40px;
   width: auto;
   cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .menu-container {
   flex: 6;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .menu-list {
@@ -58,7 +63,7 @@
 
 .menu-list-item:hover {
   font-weight: bold;
-  color: red;
+  color: green;
   text-decoration: underline;
 }
 
@@ -126,21 +131,7 @@
 }
 
 /* Sign-in Button */
-.signin-btn {
-  display: flex;
-  padding: 5px 15px;
-  margin: 5px;
-  font-size: 14px;
-  font-family: 'Press Start 2P', cursive;
-  font-weight: bold;
-  background-color: #1aff66; 
-  color: white;
-  border: 2px solid #1aff66; 
-  border-radius: 10px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s, border-color 0.3s;
-}
+
 
 h1 {
   color: blue;
@@ -163,12 +154,9 @@ button {
 }
 
 button:hover {
-  color: white;
+  color: black;
 }
-.signin-btn:hover {
-  background-color: #1aff66;
-  border-color: #1aff66;
-}
+
 
 /* Responsive styles for smaller screens */
 @media only screen and (max-width: 940px) {
