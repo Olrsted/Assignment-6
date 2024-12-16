@@ -112,7 +112,8 @@
 
 /* Button inside the movie item */
 .feature-list-item-button {
-  bottom: 40px;
+  bottom: 20px;
+  right: 30px;
   padding: 8px 15px;
   background-color: white;
   color: black;
