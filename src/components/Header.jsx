@@ -50,7 +50,7 @@ function Header() {
 
       </div >
       {loggedIn ? (
-        <h1>Welcome to WStream4U, {firstName}!</h1>
+        <h1>Hello, {firstName}!</h1>
       ) : (
         <></>
       )}
